@@ -3,47 +3,49 @@ body,html{
   margin: 0 auto;
 }
 body div[class="row"]:first-child{
-  height:750px;
+  height: 800px;
 }
 .border{
-  border: 3px solid black;
+  border: 5px solid black;
   box-sizing: border-box;
-}
-.hauteur{
-  height:100%;
 }
 .rouge{
   background-color: red;
 }
+.gauche{
+    height: 50%;
+}
 .gris{
   background-color: grey;
-  height: 50%;
 }
 .jaune{
   background-color: yellow;
-  height: 50%;
+}
+.blanc{
+    background-color: white;
 }
 .bleu{
   background-color: blue;
 }
 .cote_gauche{
   height: 100%;
-  border: 3px solid black;
-  box-sizing: border-box;
-
 }
-.centre_gauche{
+.centre_haut_gauche{
   height: 25%;
-  border: 3px solid black;
-  box-sizing: border-box;
 }
 .centre_bas_gauche{
   height: 75%;
   border: 3px solid black;
   box-sizing: border-box;
 }
+.centre_haut{
+    height: 25%
+}
 .centre_droit{
   height: 25%;
+}
+.centre_droit_2{
+    height: 25%
 }
 .centre_bas_int{
   height: 50%;
@@ -58,7 +60,29 @@ body div[class="row"]:first-child{
 .bas{
   height: 15%;
 }
-.bas_jaune{
-  height: 15%;
-  background-color: yellow;
+.border_droite{
+    border-right: 5px solid black;
+}
+.border_haut{
+    border-top: 5px solid black;
+}
+.border_gauche{
+    border-left: 5px solid black;
+}
+
+/*hover, animations pour zoom*/
+div[class*='col-md'] div[class*='col-md'], .bas,.bizarre{
+    transition: all 0.15s;
+	-moz-transition: all 0.15s;
+	-webkit-transition: all 0.15s;
+	-o-transition: all 0.15s;
+}
+div[class*='col-md'] div[class*='col-md']:hover,.bas:hover,.bizarre:hover{
+    overflow: hidden;
+    transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	-webkit-transform: scale(1.3);
+	-o-transform: scale(1.3);
+	-moz-transform: scale(1.3);
+    z-index: 1;
 }
