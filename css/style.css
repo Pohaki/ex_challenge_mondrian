@@ -1,0 +1,64 @@
+body,html{
+  height:100%;
+  margin: 0 auto;
+}
+body div[class="row"]:first-child{
+  height:750px;
+}
+.border{
+  border: 3px solid black;
+  box-sizing: border-box;
+}
+.hauteur{
+  height:100%;
+}
+.rouge{
+  background-color: red;
+}
+.gris{
+  background-color: grey;
+  height: 50%;
+}
+.jaune{
+  background-color: yellow;
+  height: 50%;
+}
+.bleu{
+  background-color: blue;
+}
+.cote_gauche{
+  height: 100%;
+  border: 3px solid black;
+  box-sizing: border-box;
+
+}
+.centre_gauche{
+  height: 25%;
+  border: 3px solid black;
+  box-sizing: border-box;
+}
+.centre_bas_gauche{
+  height: 75%;
+  border: 3px solid black;
+  box-sizing: border-box;
+}
+.centre_droit{
+  height: 25%;
+}
+.centre_bas_int{
+  height: 50%;
+  background-color: grey;
+}
+.centre_bas_droit{
+  height: 25%;
+}
+.cote_droit{
+  height: 50%;
+}
+.bas{
+  height: 15%;
+}
+.bas_jaune{
+  height: 15%;
+  background-color: yellow;
+}
